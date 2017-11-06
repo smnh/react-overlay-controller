@@ -58,9 +58,9 @@ import OverlayController from 'react-overlay-controller';
 
 class MyModal extends React.Component {
 
-    onClose() {
+    onClose = () => {
         OverlayController.hideOverlay();
-    }
+    };
 
     render() {
         return (
