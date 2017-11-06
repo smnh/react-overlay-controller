@@ -14,7 +14,7 @@ component hierarchy. Most important, it should not have any ancestor
 elements with css `transform` applied. Otherwise, it will not cover the
 entire screen.
 
-```
+```javascript
 import React from 'react';
 import OverlayController from 'react-overlay-controller';
 
@@ -34,7 +34,7 @@ class App extends React.Component {
 
 ## Presenting an Overlay
 
-```
+```javascript
 import React from 'react';
 import OverlayController from 'react-overlay-controller';
 import MyModal from './somewhere/MyModal';
@@ -52,7 +52,7 @@ class MyComponent extends React.Component {
 
 ## Dismissing an Overlay
 
-```
+```javascript
 import React from 'react';
 import OverlayController from 'react-overlay-controller';
 
@@ -125,7 +125,7 @@ The `div#overlayContainer` element is the root element of the
 to the root element and rendered inside `div.overlayComponentContainer`
 element:
 
-```
+```jsx
 <div id="overlayContainer">
     <div class="overlayCurtain"></div>
     <div class="overlayComponentContainer">
