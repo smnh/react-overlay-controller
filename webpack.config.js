@@ -4,11 +4,12 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
 
-    entry: './src/components/Overlay/OverlayController.js',
+    entry: './src/components/Overlay/index.js',
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js'
+        filename: 'index.js',
+        libraryTarget: 'commonjs2'
     },
 
     devtool: "source-map",
